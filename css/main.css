@@ -22,9 +22,11 @@ GRID
 ..............................................................*/
 .container {
     width: 1140px;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .row:after {
     clear: both;
@@ -38,10 +40,14 @@ GRID
     float: left;
 
 }
+.portfolio {
+    height: 484px;
+}
 
 .portfolio-item__img {
     overflow: hidden;
-    height: 540px;
+    height: 284px;
+    border: 2px solid black;
 }
 
 .portfolio-item__img img {
@@ -64,12 +70,10 @@ HEADER
 ..............................................................*/
 
 .header {
-    background: #63C464;
     background-image: url("../img/bg/bg-header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.8;
     
     height: 100vh;
     
@@ -112,17 +116,18 @@ HEADER
 PORTFOLIO
 
 ..............................................................*/
+
 .portfolio {
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio-item {
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 .title {
     font-size: 46px;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
     font-family: 'Merriweather', serif;
     text-align: center;
 }
@@ -147,7 +152,7 @@ PORTFOLIO
 }
 
 .portfolio-item__title a:hover {
-    color: #0052c2;
+    color: black;
     border-color: rgba(0, 82, 194, 0.3);
 }
 
@@ -220,10 +225,9 @@ FOOTER
 
 ..............................................................*/
 .footer {
-    background-color: #2C2C2C;
-    color: #6479a2;
-    padding-top: 90px;
-    padding-bottom: 190px;
+    background-color: black;
+    color: white;
+    padding-top: 280px;
 }
 
 .footer p {
@@ -259,7 +263,7 @@ p.footer__social-icons a:last-child {
 }
 
 p.footer__social-icons a:hover {
-    color: #ffe400;
+    color: #e74c3c;
 }
 
 .button {
