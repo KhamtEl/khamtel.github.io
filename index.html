@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Портфолио KhamtEl</title>
-    
-    
-<!-- Нормализация стилей -->
+
+    <!-- Инструкция для IE -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+
+    <!-- тображать страницу в масштабе 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Нормализация стилей -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 
-<!-- Собственные стили -->
+    <!-- Собственные стили -->
     <link rel="stylesheet" href="css/main.css">
     
-<!-- Подключение веб-шрифтов -->
+    <!-- Подключение веб-шрифтов -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
     <link href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
@@ -20,30 +25,31 @@
           
 </head>
 <body>
-        
+<div id="fullpage">
 <!-- ............................................................
 
 HEADER
 
 ..............................................................-->
-   
-    <div class="header">
-        
-        <div class="header__title">Эльвира Хамитова</div>
+
+<section class="section">
+        <div class="header">
+            <div class="header__title">Эльвира Хамитова</div>
             <div class="header__slogan">Верстка и создание сайтов на HTML CSS JavaScript</div>
             <div class="header__arrow">
                 <i class="fa fa-arrow-down" aria-hidden="true">
                 </i>
             </div>
          </div>
-    </div>
+</section>
+
 
 <!-- ...........................................................
 
 PORTFOLIO
 
 ...........................................................-->
-
+<section class="section">
     <div class="portfolio">
         <div class="container">
 
@@ -103,14 +109,14 @@ PORTFOLIO
 
         </div>
     </div>
-
+</section>
 <!--...........................................................
 
 FOOTER
 
 .............................................................-->
- 
- <div class="footer">
+<section class="section">
+    <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -148,7 +154,26 @@ FOOTER
         </div>
     </div>
  </div>
-        
-    
+
+    <!-- Библиотека jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- js файлы плагина fullpage -->
+    <script src="fullpage/jquery.easings.min.js">
+    </script>
+    <script src="fullpage/scrolloverflow.min.js">
+    </script>
+    <script src="fullpage/jquery.fullPage.min.js">
+    </script>
+    <script>
+            $(document).ready(function() {
+            $('#fullpage').fullpage();
+            });
+    </script>
+
+    <!-- CSS файл плагина fullpage -->
+    <link href="fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
+</section>
+ </div>
 </body>
 </html>
