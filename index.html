@@ -166,9 +166,12 @@ FOOTER
     <script src="fullpage/jquery.fullPage.min.js">
     </script>
     <script>
-            $(document).ready(function() {
-            $('#fullpage').fullpage();
-            });
+            var doFullpage = document.documentElement.clientWidth;
+            if (doFullpage > 768) {
+                $(document).ready(function () {
+                    $('#fullpage').fullpage();
+                });
+            }
     </script>
 
     <!-- CSS файл плагина fullpage -->
