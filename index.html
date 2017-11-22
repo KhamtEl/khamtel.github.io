@@ -7,7 +7,7 @@
     <!-- Инструкция для IE -->
     <meta http-equiv="x-ua-compatible" content="IE=edge">
 
-    <!-- тображать страницу в масштабе 100% -->
+    <!-- Отображать страницу в масштабе 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Нормализация стилей -->
@@ -22,17 +22,18 @@
     
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+
+    <!-- Svg 
           
 </head>
 <body>
-<div id="fullpage">
+
 <!-- ............................................................
 
 HEADER
 
 ..............................................................-->
 
-<section class="section">
         <div class="header">
             <div class="header__title">Эльвира Хамитова</div>
             <div class="header__slogan">Верстка и создание сайтов на HTML CSS JavaScript</div>
@@ -40,23 +41,18 @@ HEADER
                 <i class="fa fa-arrow-down" aria-hidden="true">
                 </i>
             </div>
-         </div>
-</section>
-
+        </div>
 
 <!-- ...........................................................
 
 PORTFOLIO
 
 ...........................................................-->
-<section class="section">
     <div class="portfolio">
         <div class="container">
-
             <div class="title">
                 Портфолио
             </div>
-
                 <div class="row">
                     <!-- Работа в портфолио -->
                     <div class="col-4">
@@ -106,24 +102,20 @@ PORTFOLIO
                     </div>
                     <!-- //Работа в портфолио -->
                 </div>
-
         </div>
     </div>
-</section>
 <!--...........................................................
 
 FOOTER
 
 .............................................................-->
-<section class="section">
     <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
+             <div class="row">
+                <div class="col-4">
                 <p class="footer__name">Эльвира Хамитова</p>
                 <p>Верстка и создание сайтов на HTML CSS JavaScript</p>
             </div>
-            <div class="col-4">
+                <div class="col-4">
                 <p class="footer__social">Мои профили в социальных сетях:</p>
                 <p class="footer__social-icons">
                     <a href="#" target="_blank">
@@ -147,36 +139,15 @@ FOOTER
                     </a>
                 </p>
             </div>
-            <div class="col-4">
+                <div class="col-4">
                 <div><a href="https://vk.com/khamtel" class="button" target="_blank">Связаться ВКОНТАКТЕ</a></div>
                 <p>Напишите мне, чтобы заказать или узнать<br> стоимость верстки вашего проекта</p>
             </div>
-        </div>
+              </div>
     </div>
- </div>
 
     <!-- Библиотека jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <!-- js файлы плагина fullpage -->
-    <script src="fullpage/jquery.easings.min.js">
-    </script>
-    <script src="fullpage/scrolloverflow.min.js">
-    </script>
-    <script src="fullpage/jquery.fullPage.min.js">
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                autoScrolling: 768 < window.outerWidth
-            });
-
-        });
-    </script>
-
-    <!-- CSS файл плагина fullpage -->
-    <link href="fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
-</section>
- </div>
 </body>
 </html>
